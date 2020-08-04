@@ -1,0 +1,10 @@
+name: 'HTTP Action'
+description: 'Take HTTP Action'
+inputs:
+  url:
+    description: 'URL'
+    required: false:
+    default: 'World'
+runs:
+  using: 'node12'
+  main: 'index.js'

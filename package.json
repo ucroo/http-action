@@ -1,0 +1,17 @@
+{
+  "name": "http-action",
+  "version": "1.0.0",
+  "description": "HTTP Action",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucroo/http-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^1.1.0"
+  }
+}
