@@ -3,7 +3,7 @@ description: 'Take HTTP Action'
 inputs:
   url:
     description: 'URL'
-    required: false:
+    required: false
     default: 'World'
 runs:
   using: 'node12'
