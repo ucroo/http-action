@@ -11,11 +11,11 @@ inputs:
   data:
     description: 'data'
     required: false,
-    default: {}
+    default: "{}"
   headers:
     description: 'headers'
     required: false,
-    default: {}
+    default: "{}"
 
 runs:
   using: 'node12'
