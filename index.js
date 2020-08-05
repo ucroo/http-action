@@ -17,7 +17,7 @@ try {
         headers: headers
     }).then(function(response) {
     });
-    const payload = JSON.stringify(data, undefined, 2)
+    const payload = JSON.stringify(github.context, undefined, 2)
     console.log(`The event payload: ${payload}`);
 } catch (error) {
     core.setFailed(error.message);
