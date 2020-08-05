@@ -11,8 +11,8 @@ try {
     axios.request({
         url: url,
         method: method,
-        data: JSON.parse(data),
-        headers: JSON.parse(headers)
+        data: data,
+        headers: headers
     }).then(function(response) {
         console.log(response.data);
     });
