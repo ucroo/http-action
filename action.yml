@@ -16,6 +16,9 @@ inputs:
     description: 'headers'
     required: false
     default: "{}"
+outputs:
+  response:
+    description: 'response'
 
 runs:
   using: 'node12'

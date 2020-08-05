@@ -8,6 +8,7 @@ try {
     const headers = JSON.parse(core.getInput('headers'));
     const data = JSON.parse(core.getInput('data'));
 
+    core.setOutput("response", "processing");
     axios.request({
         url: url,
         method: method,
