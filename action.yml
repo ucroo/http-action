@@ -6,15 +6,15 @@ inputs:
     required: true
   method:
     description: 'method'
-    required: false,
+    required: false
     default: "GET"
   data:
     description: 'data'
-    required: false,
+    required: false
     default: "{}"
   headers:
     description: 'headers'
-    required: false,
+    required: false
     default: "{}"
 
 runs:
