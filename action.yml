@@ -2,9 +2,21 @@ name: 'HTTP Action'
 description: 'Take HTTP Action'
 inputs:
   url:
-    description: 'URL'
-    required: false
-    default: 'World'
+    description: 'url'
+    required: true
+  method:
+    description: 'method'
+    required: false,
+    default: "GET"
+  data:
+    description: 'data'
+    required: false,
+    default: {}
+  headers:
+    description: 'headers'
+    required: false,
+    default: {}
+
 runs:
   using: 'node12'
   main: 'index.js'
