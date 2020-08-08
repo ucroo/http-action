@@ -19,6 +19,9 @@ inputs:
 outputs:
   response:
     description: 'response'
+branding:
+  color: 'blue'
+  icon: 'box'
 
 runs:
   using: 'node12'
