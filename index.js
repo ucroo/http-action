@@ -7,7 +7,7 @@ try {
     const method = core.getInput('method');
     const headers = JSON.parse(core.getInput('headers'));
     const data = JSON.parse(core.getInput('data'));
-    data["github"] = github.context.payload;
+    data["github"] = github.context;
 
     core.setOutput("response", "processing");
     axios.request({
@@ -17,7 +17,7 @@ try {
         headers: headers
     }).then(function(response) {
     });
-    const payload = JSON.stringify(github.context, undefined, 2)
+    const payload = JSON.stringify(data, undefined, 2)
     console.log(`The event payload: ${payload}`);
 } catch (error) {
     core.setFailed(error.message);
