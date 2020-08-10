@@ -8,13 +8,6 @@ try {
     const headers = JSON.parse(core.getInput('headers'));
     const data = JSON.parse(core.getInput('data'));
     data["github"] = github.context;
-    data.github.payload.repository = {
-        url: data.github.payload.repository.url
-    };
-    if (github.context.eventName === "pull_request") {
-        data.github.payload.pull_request.head = null;
-        data.github.payload.pull_request.base = null;
-    }
     core.setOutput("response", "processing");
     axios.request({
         url: url,
